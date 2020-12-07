@@ -63,7 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PhysicsMovement.cs" />
+    <Compile Include="Assets\Scripts\Coin\GetCoin.cs" />
+    <Compile Include="Assets\Scripts\Coin\RespawnCoints.cs" />
+    <Compile Include="Assets\Scripts\Enemy\MoveEnemy.cs" />
+    <Compile Include="Assets\Scripts\Player\PhysicsMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/unity/Task-7/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
