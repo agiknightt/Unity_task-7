@@ -10,7 +10,7 @@ public class MoveEnemy : MonoBehaviour
     private Transform[] _points;
     private int _currentPoint;
 
-    void Start()
+    private void Start()
     {
         _points = new Transform[_path.childCount];
 
@@ -19,7 +19,8 @@ public class MoveEnemy : MonoBehaviour
             _points[i] = _path.GetChild(i);
         }
     }
-    void Update()
+
+    private void Update()
     {
         Transform target = _points[_currentPoint];
 
@@ -44,6 +45,7 @@ public class MoveEnemy : MonoBehaviour
             }
         }        
     }
+
     private void ChangeRotation(float x = 0, float y = 0)
     {
         transform.rotation = Quaternion.Euler(x, y, 0);
